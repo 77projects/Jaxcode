@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaxcode Project</title>
+    <title>Jaxcode Live</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
-    <style>
-        /* Your CSS goes here */
-        body { font-family: sans-serif; display: flex; justify-content: center; }
-    </style>
-</head>
+    <script src="https://cdn.tailwindcss.com"></script> </head>
 <body>
     <div id="root"></div>
 
     <script type="text/babel">
-        
-        // PASTE YOUR COMPONENT CODE HERE
+        // ==========================================
+        // PASTE YOUR GITHUB CODE BELOW THIS LINE
+        // (Remember: Delete the "import" lines!)
+        // ==========================================
+
         function App() {
+            // Your Jaxcode logic goes here...
             return (
-                <div>
-                    <h1>Hello from Jaxcode!</h1>
-                    <p>This is running from a single HTML file.</p>
+                <div className="p-10">
+                    <h1 className="text-2xl font-bold">Your code is now active!</h1>
                 </div>
             );
         }
 
-        // 3. Render the component into the "root" div
+        // ==========================================
+        // DO NOT TOUCH THE LINE BELOW
+        // ==========================================
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<App />);
-        
     </script>
 </body>
 </html>
