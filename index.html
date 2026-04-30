@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jaxcode Live</title>
-  </head>
-  <body>
-    <div id="root"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaxcode Project</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <style>
+        /* Your CSS goes here */
+        body { font-family: sans-serif; display: flex; justify-content: center; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        
+        // PASTE YOUR COMPONENT CODE HERE
+        function App() {
+            return (
+                <div>
+                    <h1>Hello from Jaxcode!</h1>
+                    <p>This is running from a single HTML file.</p>
+                </div>
+            );
+        }
+
+        // 3. Render the component into the "root" div
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+        
+    </script>
+</body>
 </html>
